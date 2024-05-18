@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: var(--bgColor);
+}
+.calc {
+  background-color: var(--calcColor);
+  margin: 50px auto;
+  padding: 2px;
+  width: 50%;
+  box-shadow: 0 0 15px var(--color);
+  border-radius: 20px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+h2 {
+  color: var(--color);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 25px;
+}
+button.mode {
+  background-color: var(--bgheader);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: aqua;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+  transition: 0.2s;
+}
+button.mode:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
+  transition: 0.5s;
+}
+.icon-moon-o {
+  font-size: 20px;
+}
+.icon-sun {
+  color: black;
+  font-size: 20px;
+}
+.icon-sun:hover,
+.icon-moon-o:hover {
+  font-size: 25px;
+  color: yellow;
+}
+.math {
+  height: 100px;
+  color: var(--color);
+  font-size: 45px;
+  font-weight: 500;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 22px;
+  margin-right: 22px;
+}
+.num {
+  background-color: var(--btnColor);
+  border-radius: 20px;
+}
+.cont {
+  margin-left: 10px;
+  padding: 20px 0;
+}
+.btn {
+  font-size: 33px;
+  cursor: pointer;
+  width: 22%;
+  margin: 7px;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  box-shadow: 1px 1px 6px var(--color);
+  font-weight: 600;
+  color: var(--color);
+  background-color: transparent;
+}
+.zero {
+  width: 46.5%;
+}
+@media screen and (max-width: 1040px) {
+  .calc {
+    width: 50%;
+  }
+  .cont {
+    margin-left: 10px;
+  }
+  .btn {
+    width: 22%;
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  .zero {
+    width: 46.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calc {
+    width: 80%;
+  }
+  .cont {
+    margin-left: 25px;
+  }
+  .btn {
+    width: 22%;
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  .zero {
+    width: 46.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .calc {
+    width: 100%;
+  }
+  .btn {
+    width: 20%;
+    margin: 5px;
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  .zero {
+    width: 42.5%;
+  }
+}
